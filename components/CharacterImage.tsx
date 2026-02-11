@@ -2,21 +2,23 @@ import React from 'react';
 import { SoobinEmotion } from '../types';
 import { Heart } from 'lucide-react';
 
+const baseUrl = import.meta.env.BASE_URL || '/';
+
 const IMAGE_MAP: Record<SoobinEmotion, string> = {
-  [SoobinEmotion.PROUD]: "/images/soobin%20orgulloso.png",
-  [SoobinEmotion.SHY]: "/images/soobin%20timidez.png",
-  [SoobinEmotion.HANDSOME]: "/images/soobin%20galan.png",
-  [SoobinEmotion.DISAPPOINTED]: "/images/soobin%20decepcionado.png",
-  [SoobinEmotion.SARCASTIC]: "/images/soobin%20sarcasmo.png",
-  [SoobinEmotion.CONFUSED]: "/images/soobin%20confundido.png",
-  [SoobinEmotion.ANGRY]: "/images/soobin%20enojado.png",
-  [SoobinEmotion.HAPPY]: "/images/soobin%20feliz.png",
-  [SoobinEmotion.FAKE_INDIFFERENCE]: "/images/soobin%20Fingida%20indiferencia.png",
-  [SoobinEmotion.SURPRISED]: "/images/soobin%20sorprendido.png",
-  [SoobinEmotion.BLUSHED]: "/images/soobin%20sonrojado.png",
-  [SoobinEmotion.SUPER_FURIOUS]: "/images/soobin%20super%20enojado.png",
-  [SoobinEmotion.NEUTRAL]: "/images/soobin%20galan.png",
-  [SoobinEmotion.SAD_BUT_GRATEFUL]: "/images/soobin%20feliz.png",
+  [SoobinEmotion.PROUD]: `${baseUrl}images/soobin%20orgulloso.png`,
+  [SoobinEmotion.SHY]: `${baseUrl}images/soobin%20timidez.png`,
+  [SoobinEmotion.HANDSOME]: `${baseUrl}images/soobin%20galan.png`,
+  [SoobinEmotion.DISAPPOINTED]: `${baseUrl}images/soobin%20decepcionado.png`,
+  [SoobinEmotion.SARCASTIC]: `${baseUrl}images/soobin%20sarcasmo.png`,
+  [SoobinEmotion.CONFUSED]: `${baseUrl}images/soobin%20confundido.png`,
+  [SoobinEmotion.ANGRY]: `${baseUrl}images/soobin%20enojado.png`,
+  [SoobinEmotion.HAPPY]: `${baseUrl}images/soobin%20feliz.png`,
+  [SoobinEmotion.FAKE_INDIFFERENCE]: `${baseUrl}images/soobin%20Fingida%20indiferencia.png`,
+  [SoobinEmotion.SURPRISED]: `${baseUrl}images/soobin%20sorprendido.png`,
+  [SoobinEmotion.BLUSHED]: `${baseUrl}images/soobin%20sonrojado.png`,
+  [SoobinEmotion.SUPER_FURIOUS]: `${baseUrl}images/soobin%20super%20enojado.png`,
+  [SoobinEmotion.NEUTRAL]: `${baseUrl}images/soobin%20galan.png`,
+  [SoobinEmotion.SAD_BUT_GRATEFUL]: `${baseUrl}images/soobin%20feliz.png`,
 };
 
 interface CharacterImageProps {

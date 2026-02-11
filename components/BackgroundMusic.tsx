@@ -4,7 +4,8 @@ import { Music, Pause } from 'lucide-react';
 export const BackgroundMusic: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const gmUrl = new URL('../musica-audio/George Michael - Careless Whisper.mp3', import.meta.url).href;
+  const baseUrl = import.meta.env.BASE_URL || '/';
+  const gmUrl = `${baseUrl}musica-audio/George Michael - Careless Whisper.mp3`;
   const [src, setSrc] = useState<string>(gmUrl);
 
   const togglePlay = () => {

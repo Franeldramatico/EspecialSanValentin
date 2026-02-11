@@ -119,12 +119,16 @@ const App: React.FC = () => {
           <button
             onClick={() => {
               Swal.fire({
-                title: 'Puente listo',
-                html: '<div style="font-family: var(--font-sans);">Muy pronto te llevará a la página especial ✨</div>',
+                title: '¡Felicidades! ✨',
+                html: '<div style="font-family: var(--font-sans);">Has desbloqueado todos los finales. Ahora estás lista para la sorpresa suprema...</div>',
                 icon: 'success',
-                confirmButtonText: '¡Qué emoción!',
+                confirmButtonText: 'Ir a la sorpresa suprema 💖',
                 confirmButtonColor: '#f43f5e',
                 background: 'rgba(255,255,255,0.9)',
+              }).then((result) => {
+                if (result.isConfirmed) {
+                  window.location.href = 'https://franeldramatico.github.io/EspecialSanValentin_Supremo/';
+                }
               });
             }}
             className="group relative w-14 h-14 rounded-full flex items-center justify-center shadow-lg border-2 border-white bg-valentine-500 text-white hover:bg-valentine-600 transition-all duration-500 overflow-hidden"

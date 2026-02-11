@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Franeldramatico.github.io/SanValentinv1",
+  "homepage": "https://Franeldramatico.github.io/EspecialSanValentin",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
